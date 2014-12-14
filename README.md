@@ -36,7 +36,7 @@ Additionally the script contains functions handling vectors and quaternions. How
 
 rotor.py can be used in python 2.XX and python 3.XX
 
-Example: Rotate an arbitray point around the z axys:
+Example: Rotate an arbitrary point around the z axys:
 ```Python
 
   import rotor as r
@@ -71,3 +71,29 @@ Output:
 ~~~~~~~
   1.000 0.000 0.000
   0.333 0.911 -0.244
+
+Example: Create 8 points over the circuference defined around the vector v = [ 1, 1, 1 ] and starting at point p0 = [ 1, 0, 0 ]
+
+```python
+  import rotor as r
+  import os
+
+  p0 = [ 1, 0, 0 ]
+  v = [ 1, 1, 1 ]
+  
+  for angle in range( 0, 360, 45 ):
+	  p1 = r.rotate( p0, angle, v )
+	  print( "%.3f,%.3f,%.3f " % ( p1[0], p1[1], p1[2] ) )
+```
+
+Output:
+~~~~~~~
+
+  1.000,0.000,0.000      #0 deg ( initial point )
+  0.805,0.506,-0.311     #45 deg
+  0.333,0.911,-0.244     #90 deg
+  -0.138,0.977,0.161
+  -0.333,0.667,0.667
+  -0.138,0.161,0.977
+  0.333,-0.244,0.911
+  0.805,-0.311,0.506     #315 deg
