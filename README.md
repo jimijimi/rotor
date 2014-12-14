@@ -26,10 +26,10 @@ Jaime Ortiz ( jimijimi )
 Detailed description
 --------------------
 
-rotor.py is a collection of functions. There are four main functions. The first three: rotateX( point, angle ), rotateY( point, angle ), rotateZ( point, angle ) are used to rotate a given point around any of the cartesian coordinate axes. The last function is rotate( point, angle, vector ) that allows the rotation around any arbitrary axis represented by vector.
+rotor.py is a collection of functions. There are four main functions. The first three: ```rotateX( point, angle )```, ```rotateY( point, angle )```, ```rotateZ( point, angle )``` are used to rotate a given point around any of the cartesian coordinate axes. The last function is ```rotate( point, angle, vector )``` that allows the rotation around any arbitrary axis represented by vector.
 
-A point is a list of three elements. [ x, y, z ]
-A vector is a list of three real numbers of the form [ vx, vy, vz ]. The vector can be normalized or unnormalized.
+A point is a list of three elements. ```[ x, y, z ]```
+A vector is a list of three real numbers of the form ```[ vx, vy, vz ]```. The vector can be normalized or unnormalized.
 An angle is specified in degrees.
 
 Additionally the script contains functions handling vectors and quaternions. However rotor.py shuldn't be seen as a vector/quartenion library. 
@@ -53,4 +53,21 @@ Output:
   1.000 0.000 0.000
   0.000 1.000 0.000
 
+Example: Rotate an arbitrary point around the axys defined by the vector v = [ 1, 1, 1 ]:
+```Python
 
+  import rotor as r
+  
+  p0 = [ 1, 0, 0 ]
+  angle = 90
+  v = [ 1, 1, 1 ]
+  p1 = r.rotate( p0, angle, v )
+
+  print( "%.3f %.3f %.3f " % ( p0[0], p0[1], p0[2] ) )
+  print( "%.3f %.3f %.3f " % ( p1[0], p1[1], p1[2] ) )
+```
+
+Output:
+~~~~~~~
+  1.000 0.000 0.000
+  0.333 0.911 -0.244
