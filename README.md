@@ -49,11 +49,13 @@ Example: Rotate an arbitrary point around the z axys:
   print( "%.3f %.3f %.3f " % ( p1[0], p1[1], p1[2] ) )
 ```
 Output:
-~~~~~~~
+```
   1.000 0.000 0.000
   0.000 1.000 0.000
+```
 
 Example: Rotate an arbitrary point around the axys defined by the vector v = [ 1, 1, 1 ]:
+
 ```Python
 
   import rotor as r
@@ -68,10 +70,10 @@ Example: Rotate an arbitrary point around the axys defined by the vector v = [ 1
 ```
 
 Output:
-~~~~~~~
+```
   1.000 0.000 0.000
   0.333 0.911 -0.244
-
+```
 Example: Create 8 points over the circuference defined around the vector v = [ 1, 1, 1 ] and starting at point p0 = [ 1, 0, 0 ]
 
 ```python
@@ -87,8 +89,7 @@ Example: Create 8 points over the circuference defined around the vector v = [ 1
 ```
 
 Output:
-~~~~~~~
-
+```
   1.000,0.000,0.000      #0 deg ( initial point )
   0.805,0.506,-0.311     #45 deg
   0.333,0.911,-0.244     #90 deg
@@ -97,3 +98,4 @@ Output:
   -0.138,0.161,0.977
   0.333,-0.244,0.911
   0.805,-0.311,0.506     #315 deg
+```
