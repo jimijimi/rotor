@@ -78,7 +78,6 @@ Example: Create 8 points over the circuference defined around the vector v = [ 1
 
 ```python
   import rotor as r
-  import os
 
   p0 = [ 1, 0, 0 ]
   v = [ 1, 1, 1 ]
