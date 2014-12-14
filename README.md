@@ -39,8 +39,6 @@ rotor.py can be used in python 2.XX and python 3.XX
 Example: Rotate an arbitray point around the x axys:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-::
-
   import rotor as r
   
   point = [ 1, 1, 1 ]
