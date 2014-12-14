@@ -36,10 +36,8 @@ Additionally the script contains functions handling vectors and quaternions. How
 
 rotor.py can be used in python 2.XX and python 3.XX
 
-Examples
-~~~~~~~~
-
-Rotate an arbitray point around the x axys
+Example: Rotate an arbitray point around the x axys:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
