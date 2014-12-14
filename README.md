@@ -26,7 +26,7 @@ Jaime Ortiz ( jimijimi )
 Detailed description
 --------------------
 
-rotor.py is a collection of functions. There are four main functions. The first three: ```rotateX( point, angle )```, ```rotateY( point, angle )```, ```rotateZ( point, angle )``` are used to rotate a given point around any of the cartesian coordinate axes. The last function is ```rotate( point, angle, vector )``` that allows the rotation around any arbitrary axis represented by vector.
+rotor.py is a collection of functions. There are four main functions. The first three: ```rotateX( point, angle )```, ```rotateY( point, angle )```, ```rotateZ( point, angle )``` are used to rotate a given point around any of the cartesian coordinate axes. The last function is ```rotate( point, angle, vector )``` this allows the rotation around any arbitrary axis represented by vector.
 
 A point is a list of three elements. ```[ x, y, z ]```
 A vector is a list of three real numbers of the form ```[ vx, vy, vz ]```. The vector can be normalized or unnormalized.
