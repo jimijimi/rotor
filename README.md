@@ -36,13 +36,21 @@ Additionally the script contains functions handling vectors and quaternions. How
 
 rotor.py can be used in python 2.XX and python 3.XX
 
-Example: Rotate an arbitray point around the x axys:
+Example: Rotate an arbitray point around the z axys:
 ```Python
 
   import rotor as r
   
-  point = [ 1, 1, 1 ]
+  p0 = [ 1, 0, 0 ]
   angle = 90
-  new_point_location = r.rotateX( point, angle )
-  print( new_point_location )
+  p1 = r.rotateZ( p0, angle )
+
+  print( "%.3f %.3f %.3f " % ( p0[0], p0[1], p0[2] ) )
+  print( "%.3f %.3f %.3f " % ( p1[0], p1[1], p1[2] ) )
+```
+Output:
+~~~~~~~
+  1.000 0.000 0.000
+  0.000 1.000 0.000
+
 
