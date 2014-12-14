@@ -21,7 +21,7 @@ The project has been released with the MIT license
 Author
 ------
 
-Jaime Ortiz ( jimijimi )
+Jaime Ortiz ( jimijimi ) email: jim2o at hotmail.com
 
 Detailed description
 --------------------
@@ -104,3 +104,5 @@ Output:
   0.333,-0.244,0.911
   0.805,-0.311,0.506     #315 deg
 ```
+
+
