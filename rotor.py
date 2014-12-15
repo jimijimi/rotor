@@ -23,6 +23,7 @@
   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   SOFTWARE.
 '''
+
 import math
 
 def info():
@@ -54,6 +55,15 @@ def vectorNormalized( v ):
 	"""Returns de normalized vector"""
 	v_mag = vectorMagnitude( v );
 	return [ v[0] / v_mag, v[1] / v_mag, v[2] / v_mag ] 
+
+def angleBetween2VectorsRad( a, b ):
+	a_mag = vectorMagnitude( a )
+	b_mag = vectorMagnitude( b )
+	adotb = vectorDotProduct( a, b )
+	return math.acos( adotb / ( a_mag * b_mag ) )
+
+def angleBetween2VectorsDeg( a, b ):
+	return angleBetween2VectorsRad( a, b ) * 180.0 / math.pi 
 	
 def quaternionDotProduct( q0, q1 ):
 	"""Returns the scalar quantiry representing the dot product of two vectors"""
@@ -85,7 +95,7 @@ def quaternionRotor( v, phi ):
 	"""Returns the quaternion representing the rotation around the vector v by an angle phi expressed in radians"""
 	return [ math.cos( phi / 2.0 ), 
 			 math.sin( phi / 2.0 ) * v[0], 
-			math.sin( phi / 2.0 ) * v[1], 
+			 math.sin( phi / 2.0 ) * v[1], 
 			 math.sin( phi / 2.0 ) * v[2] ]
 
 def deg2rad( angle_deg ):
