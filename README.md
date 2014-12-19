@@ -56,7 +56,7 @@ Output:
   0.000 1.000 0.000
 ```
 
-![Screenshot](https://raw.github.com/jimijimi/rotor/master/images/001_rotateZ.jpg =299x267)
+![Screenshot](https://raw.github.com/jimijimi/rotor/master/images/001_rotateZ.jpg=299x267)
 
 Example: 
 
