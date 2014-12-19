@@ -56,6 +56,8 @@ Output:
   0.000 1.000 0.000
 ```
 
+![Screenshot](https://raw.github.com/jimijimi/rotor/master/images/001_rotateZ.jpg)
+
 Example: 
 
 Rotate an arbitrary point around the axys defined by the vector v = [ 1, 1, 1 ]:
