@@ -58,6 +58,8 @@ Output:
 
 ![Picture](https://raw.github.com/jimijimi/rotor/master/images/001_rotateZ.jpg)
 
+The red square is the origin. The black square over the x axys is the initial position. The black square over the y axys is the final position. The background mesh is not to scale.
+
 Example: 
 
 Rotate an arbitrary point around the axys defined by the vector v = [ 1, 1, 1 ]:
